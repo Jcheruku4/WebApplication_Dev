@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenditure Analysis</title>
+</head>
+<body>
+    <div class="navbar">
+        <button class="dashboard" onclick="window.location.href='/dashboard'">Dashboard</button>
+    </div>
+    <h1>Expenditure Analysis</h1>
+    <form action="/expenditure_analysis" method="GET">
+        <label for="filter">Filter by:</label>
+        <select id="filter" name="filter">
+            <option value="all" {% if filter_option == 'all' %}selected{% endif %}>All</option>
+            <option value="today" {% if filter_option == 'today' %}selected{% endif %}>Today</option>
+            <option value="last_3_months" {% if filter_option == 'last_3_months' %}selected{% endif %}>Last 3 Months</option>
+            <option value="last_6_months" {% if filter_option == 'last_6_months' %}selected{% endif %}>Last 6 Months</option>
+            <option value="last_12_months" {% if filter_option == 'last_12_months' %}selected{% endif %}>Last 12 Months</option>
+        </select>
+        <button type="submit">Apply</button>
+    </form>
+    <div class="cards-container">
+        {% for expenditure in expenditures %}
+        <div class="expenditure-card">
+            <p><strong>Description:</strong> {{ expenditure.description }}</p>
+            <p><strong>Amount:</strong> {{ expenditure.amount }}</p>
+            <p><strong>Date:</strong> {{ expenditure.timestamp }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+h1, h2 {
+    color: #002366;
+    margin: 20px 0;
+}
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 10px auto;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+button.dashboard, button.logout {
+    margin: 0;
+}
+button.dashboard {
+    background-color: #002366;
+    color: white;
+}
+button.dashboard:hover {
+    background-color: #001a4d;
+}
+button.logout {
+    background-color: #228B22;
+    color: white;
+}
+button.logout:hover {
+    background-color: #186c18;
+}
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 400px;
+    display: inline-block;
+}
+form label {
+    display: block;
+    margin: 10px auto;
+    text-align: center; /* Center align labels */
+    font-size: 14px;
+    color: #333;
+}
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+input:focus, select:focus {
+    border-color: #002366;
+    outline: none;
+}
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+.expenditure-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #228B22;
+    width: 90%;
+    max-width: 600px;
+}
+.expenditure-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar {
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
