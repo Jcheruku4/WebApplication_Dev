@@ -1,0 +1,182 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+h1, h2 {
+    color: #002366;
+    margin: 20px 0;
+}
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #002366;
+    color: white;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #002366;
+}
+.navbar {
+    background: none;
+    text-align: right;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar button {
+    background-color: #002366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.navbar button:hover {
+    background-color: #002366;
+}
+form {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 400px;
+}
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+input:focus, select:focus {
+    border-color: #002366;
+    outline: none;
+}
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+.expenditure-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 600px;
+}
+.expenditure-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.delete-btn {
+    background-color: #002366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: #002366;
+}
+.delete-all-btn {
+    background-color: #002366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.delete-all-btn:hover {
+    background-color: #002366;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+.modal-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #002366;
+    color: white;
+}
+.modal-buttons button:hover {
+    background-color: #002366;
+}
+#confirm-delete {
+    background-color: #002366;
+    color: white;
+}
+#confirm-delete:hover {
+    background-color: #002366;
+}
+#cancel-delete {
+    background-color: #002366;
+    color: white;
+}
+#cancel-delete:hover {
+    background-color: #002366;
+}
+.analysis-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+.analysis-box h2, .analysis-box h3 {
+    margin-bottom: 15px;
+}
+.analysis-box p, .analysis-box ul {
+    margin: 10px 0;
+}
+.analysis-box ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+.analysis-box ul li {
+    margin-bottom: 5px;
+}
